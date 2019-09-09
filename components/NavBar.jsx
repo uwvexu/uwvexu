@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const yellow = '#ffd600';
+import { yellow } from './Styles';
 
 const FlexContainer = styled.div`
   display: flex;

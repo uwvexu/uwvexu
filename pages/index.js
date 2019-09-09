@@ -3,6 +3,7 @@ import SectionHeader from '../components/SectionHeader';
 import SectionBody from '../components/SectionBody';
 import TextBox from '../components/TextBox';
 import Link from '../components/Link';
+import Button from '../components/BodyButton';
 
 export default () => (
   <div>
@@ -19,6 +20,9 @@ export default () => (
         <br /> We started this team so that any student could join and learn
         more about robotics. Anyone is welcome to join.
       </TextBox>
+      <br />
+      <br />
+      <Button>JOIN US</Button>
     </SectionBody>
   </div>
 );
