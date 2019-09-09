@@ -4,6 +4,7 @@ import SectionBody from '../components/SectionBody';
 import TextBox from '../components/TextBox';
 import Link from '../components/Link';
 import Button from '../components/BodyButton';
+import ImageSection from '../components/ImageSection';
 
 export default () => (
   <div>
@@ -24,5 +25,12 @@ export default () => (
       <br />
       <Button>JOIN US</Button>
     </SectionBody>
+    <ImageSection
+      imageUrls={[
+        'https://guinnessworldrecords.com/Images/Largest-robot-competition-VEX-Worlds_tcm25-426572.jpg',
+        'https://msutoday.msu.edu/_/img/assets/2017/robotics-tournament.jpg',
+        'https://i.ytimg.com/vi/CDDGBcs0TFM/hqdefault.jpg'
+      ]}
+    />
   </div>
 );
