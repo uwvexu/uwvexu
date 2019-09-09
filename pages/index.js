@@ -1,3 +1,5 @@
+import NavBar from '../components/NavBar';
+
 export default () => (
-  <div>Hello World. Test test</div>
+  <NavBar />
 )
