@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const yellow = '#ffd600';
+
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -16,26 +18,29 @@ const Spacer = styled.div`
   flex: 1;
 `;
 
-const MenuOption = styled.div`
-  color: white;
-  margin-left: 20px;
-  margin-right: 20px;
+const MenuText = styled.div`
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-family: Helvetica, Tahoma, Geneva, sans-serif;
   font-size: 20px;
   cursor: pointer;
   user-select: none;
 `;
 
-const MenuButton = styled(MenuOption)`
-  border: 2px solid #ffd600;
-  color: #ffd600;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+const MenuOption = styled(MenuText)`
+  color: white;
+`;
+
+const MenuButton = styled(MenuText)`
+  border: 2px solid ${yellow};
+  color: ${yellow};
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   transition: all 0.2s;
   :hover {
-    background-color: #ffd600;
+    background-color: ${yellow};
     color: black;
   }
 `;
