@@ -9,6 +9,6 @@ export default styled(BodySection)`
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.7);
   background-blend-mode: darken;
 `;

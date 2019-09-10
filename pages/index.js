@@ -57,7 +57,7 @@ export default () => (
         Hall, our team bus will be leaving at 9am in front of E7
       </Event>
     </BodySection>
-    <CenteredSection imageUrl='https://i.ytimg.com/vi/PJ-5H3JVtPs/maxresdefault.jpg'>
+    <CenteredSection imageUrl='http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg'>
       UWaterloo VEXU Robotics would not be possible without the help of our
       genourous sponsors.
       <br />
