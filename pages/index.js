@@ -1,17 +1,17 @@
 import NavBar from '../components/NavBar';
-import SectionHeader from '../components/SectionHeader';
-import SectionBody from '../components/SectionBody';
+import HeaderSection from '../components/HeaderSection';
+import BodySection from '../components/BodySection';
 import TextBox from '../components/TextBox';
+import ImageSection from '../components/ImageSection';
 import Link from '../components/Link';
 import Button from '../components/BodyButton';
-import ImageSection from '../components/ImageSection';
 import Event from '../components/Event';
 
 export default () => (
   <div>
     <NavBar />
-    <SectionHeader>WHO WE ARE</SectionHeader>
-    <SectionBody>
+    <HeaderSection>WHO WE ARE</HeaderSection>
+    <BodySection>
       <TextBox>
         We’re a team of University of Waterloo students who design, build, and
         program robots to compete at the VEXU World Championships. <br />
@@ -25,7 +25,7 @@ export default () => (
       <br />
       <br />
       <Button>JOIN US</Button>
-    </SectionBody>
+    </BodySection>
     <ImageSection
       imageUrls={[
         'https://guinnessworldrecords.com/Images/Largest-robot-competition-VEX-Worlds_tcm25-426572.jpg',
@@ -33,8 +33,8 @@ export default () => (
         'https://i.ytimg.com/vi/CDDGBcs0TFM/hqdefault.jpg'
       ]}
     />
-    <SectionHeader>EVENTS</SectionHeader>
-    <SectionBody>
+    <HeaderSection>EVENTS</HeaderSection>
+    <BodySection>
       <Event month={9} day={19} dayOfWeek='Thursday'>
         Fall 2019 first meeting - all welcome!
       </Event>
@@ -50,6 +50,6 @@ export default () => (
         First competiton - held at the University of Toronto in Carl Polluk
         Hall, our team bus will be leaving at 9am in front of E7
       </Event>
-    </SectionBody>
+    </BodySection>
   </div>
 );
