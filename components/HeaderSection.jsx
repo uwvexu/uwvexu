@@ -12,7 +12,7 @@ const HeaderText = styled.div`
   font-size: 80px;
   color: white;
   font-weight: bold;
-  left: 15%;
+  margin-left: 15rem;
   bottom: -18px;
   position: absolute;
 `;

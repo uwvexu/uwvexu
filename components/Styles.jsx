@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const yellow = '#ffd600';
+const darkGrey = '#585858';
 
 const Spacer = styled.div`
   flex: 1;
@@ -16,9 +17,4 @@ const FlexContainer = styled.div`
   align-items: center;
 `;
 
-export {
-  yellow,
-  Spacer,
-  Logo,
-  FlexContainer,
-};
+export { yellow, darkGrey, Spacer, Logo, FlexContainer };

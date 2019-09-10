@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import NextLink from '../components/NextLink';
-import { yellow } from './Styles';
+import { yellow, darkGrey } from './Styles';
 
 const StyledButton = styled.div`
   display: inline-block;
@@ -18,6 +18,16 @@ const StyledButton = styled.div`
   }
 `;
 
+const DarkStyledButton = styled(StyledButton)`
+  border: 2px solid white;
+  color: white;
+  :hover {
+    background-color: white;
+    border-color: white;
+    color: ${darkGrey};
+  }
+`;
+
 /**
  * @param {{
  *   children: React.ReactNode;
@@ -25,10 +35,18 @@ const StyledButton = styled.div`
  *   external?: boolean;
  * }} props
  */
-export default props => {
+export const Button = props => {
   return (
     <NextLink href={props.href} external={props.external}>
       <StyledButton>{props.children}</StyledButton>
+    </NextLink>
+  );
+};
+
+export const DarkButton = props => {
+  return (
+    <NextLink href={props.href} external={props.external}>
+      <DarkStyledButton>{props.children}</DarkStyledButton>
     </NextLink>
   );
 };
