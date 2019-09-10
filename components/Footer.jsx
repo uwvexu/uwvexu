@@ -27,11 +27,11 @@ export default () => {
       <Logo width="300px" src='https://oappa.ca/wp-content/uploads/2015/10/UniversityOfWaterloo_logo_horiz_rgb3.png' />
       <Spacer />
       <Logos>
-        <NextLink href="mailto:uwvexu@gmail.com" external><i class="fa fa-envelope"></i></NextLink>
-        <NextLink href="" external><i class="fa fa-facebook-f"></i></NextLink>
-        <NextLink href="https://github.com/uwvexu" external><i class="fa fa-github"></i></NextLink>
-        <NextLink href="" external><i class="fa fa-slack"></i></NextLink>
-        <NextLink href="https://www.youtube.com/channel/UCFgWl2UgswX70xiXT8QJlEg" external><i class="fa fa-youtube-play"></i></NextLink>
+        <NextLink href="mailto:uwvexu@gmail.com" external><i className="fa fa-envelope"></i></NextLink>
+        <NextLink href="" external><i className="fa fa-facebook-f"></i></NextLink>
+        <NextLink href="https://github.com/uwvexu" external><i className="fa fa-github"></i></NextLink>
+        <NextLink href="" external><i className="fa fa-slack"></i></NextLink>
+        <NextLink href="https://www.youtube.com/channel/UCFgWl2UgswX70xiXT8QJlEg" external><i className="fa fa-youtube-play"></i></NextLink>
       </Logos>
     </FooterContainer>
   );
