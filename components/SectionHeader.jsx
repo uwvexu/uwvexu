@@ -5,7 +5,6 @@ const HeaderContainer = styled.div`
   background-color: black;
   position: relative;
   height: 7rem;
-  margin-bottom: 5rem;
   letter-spacing: 8px;
 `;
 

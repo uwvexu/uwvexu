@@ -5,6 +5,7 @@ import TextBox from '../components/TextBox';
 import Link from '../components/Link';
 import Button from '../components/BodyButton';
 import ImageSection from '../components/ImageSection';
+import Event from '../components/Event';
 
 export default () => (
   <div>
@@ -32,5 +33,23 @@ export default () => (
         'https://i.ytimg.com/vi/CDDGBcs0TFM/hqdefault.jpg'
       ]}
     />
+    <SectionHeader>EVENTS</SectionHeader>
+    <SectionBody>
+      <Event month={9} day={19} dayOfWeek='Thursday'>
+        Fall 2019 first meeting - all welcome!
+      </Event>
+      <br />
+      <br />
+      <Event month={10} day={12} dayOfWeek='Tuesday'>
+        Krispe Cream fundraiser- come out to slc and buy a box of donuts to help
+        support our team!
+      </Event>
+      <br />
+      <br />
+      <Event month={11} day={25} dayOfWeek='Saturday'>
+        First competiton - held at the University of Toronto in Carl Polluk
+        Hall, our team bus will be leaving at 9am in front of E7
+      </Event>
+    </SectionBody>
   </div>
 );
