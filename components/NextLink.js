@@ -4,14 +4,15 @@ import Link from 'next/link';
 const NextLink = ({ href, children, external }) => {
   if (external) {
     return (
-      <a href={href} target="_blank">{children}</a>
+      <a href={href} target='_blank'>
+        {children}
+      </a>
     );
-  }
-  else {
+  } else {
     return (
       <Link href={href}>
         {/* eslint-disable-next-line */}
-        <a className={classes}>{children}</a>
+        <a>{children}</a>
       </Link>
     );
   }

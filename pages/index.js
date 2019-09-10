@@ -2,9 +2,8 @@ import NavBar from '../components/NavBar';
 import HeaderSection from '../components/HeaderSection';
 import BodySection from '../components/BodySection';
 import TextBox from '../components/TextBox';
-import NextLink from'../components/NextLink';
 import Link from '../components/Link';
-import Button from '../components/BodyButton';
+import Button from '../components/Button';
 import ImageSection from '../components/ImageSection';
 import Footer from '../components/Footer';
 import Event from '../components/Event';
@@ -18,7 +17,10 @@ export default () => (
         We’re a team of University of Waterloo students who design, build, and
         program robots to compete at the VEXU World Championships. <br />
         <br /> Each year we build two robots for a different game challenge (you
-        can see this year’s game <NextLink href="mailto:uwvexu@gmail.com" external><Link>here</Link></NextLink>
+        can see this year’s game{' '}
+        <Link href='https://www.youtube.com/watch?v=_JVQOiw_OUU' external>
+          here
+        </Link>
         ). Both robots have a 1 minute and 45 second autonomous period, and a 45
         second driver control period. <br />
         <br /> We started this team so that any student could join and learn
@@ -26,7 +28,9 @@ export default () => (
       </TextBox>
       <br />
       <br />
-      <NextLink href="https://forms.gle/WGnEERX5HZF1xDwb7" external><Button>JOIN US</Button></NextLink>
+      <Button href='https://forms.gle/WGnEERX5HZF1xDwb7' external>
+        JOIN US
+      </Button>
     </BodySection>
     <ImageSection
       imageUrls={[
