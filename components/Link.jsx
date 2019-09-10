@@ -1,9 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { yellow } from './Styles';
 
 const Link = styled.span`
   text-decoration: underline;
+  font-weight: bold;
   cursor: pointer;
+
+  transition: all 0.2s;
+  :hover {
+    color: ${yellow};
+  }
 `;
 
 /**
@@ -14,5 +21,5 @@ const Link = styled.span`
  * }} props
  */
 export default (props) => {
-  return <Link onClick={props.onClick}>{props.children}</Link>
+  return <Link>{props.children}</Link>
 };

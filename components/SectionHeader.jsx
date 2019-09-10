@@ -12,7 +12,6 @@ const HeaderContainer = styled.div`
 const HeaderText = styled.div`
   font-size: 80px;
   color: white;
-  font-family: Helvetica, Tahoma, Geneva, sans-serif;
   font-weight: bold;
   left: 15%;
   bottom: -18px;

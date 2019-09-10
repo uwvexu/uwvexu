@@ -1,26 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { yellow } from './Styles';
+import NextLink from './NextLink';
+import { yellow, FlexContainer, Spacer, Logo } from './Styles';
 
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+const NavContainer = styled(FlexContainer)`
   background-color: darkgray; /* remove this later */
-`;
-
-const Logo = styled.img`
-  width: 200px;
-`;
-
-const Spacer = styled.div`
-  flex: 1;
 `;
 
 const MenuText = styled.div`
   margin-left: 2rem;
   margin-right: 2rem;
-  font-family: Helvetica, Tahoma, Geneva, sans-serif;
   font-size: 20px;
   cursor: pointer;
   user-select: none;
@@ -28,6 +17,9 @@ const MenuText = styled.div`
 
 const MenuOption = styled(MenuText)`
   color: white;
+  transition: all 0.2s;
+  :hover {
+    color: ${yellow};
 `;
 
 const MenuButton = styled(MenuText)`
@@ -46,14 +38,14 @@ const MenuButton = styled(MenuText)`
 
 export default () => {
   return (
-    <FlexContainer>
-      <Logo src='https://oappa.ca/wp-content/uploads/2015/10/UniversityOfWaterloo_logo_horiz_rgb3.png' />
+    <NavContainer>
+      <Logo width="200px" src='https://oappa.ca/wp-content/uploads/2015/10/UniversityOfWaterloo_logo_horiz_rgb3.png' />
       <Spacer />
       <MenuOption>ABOUT</MenuOption>
       <MenuOption>EVENTS</MenuOption>
       <MenuOption>SPONSOR</MenuOption>
       <MenuOption>CONTACT</MenuOption>
-      <MenuButton>JOIN</MenuButton>
-    </FlexContainer>
+      <NextLink href="https://forms.gle/WGnEERX5HZF1xDwb7" external><MenuButton>JOIN</MenuButton></NextLink>
+    </NavContainer>
   );
 };
