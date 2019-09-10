@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import NextLink from '../components/NextLink';
-import { yellow, darkGrey } from './Styles';
+import { yellow } from './Styles';
 
 const StyledButton = styled.div`
   display: inline-block;
@@ -24,7 +24,7 @@ const DarkStyledButton = styled(StyledButton)`
   :hover {
     background-color: white;
     border-color: white;
-    color: ${darkGrey};
+    color: black;
   }
 `;
 
