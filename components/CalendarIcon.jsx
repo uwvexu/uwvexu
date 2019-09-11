@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helvetica } from './Styles';
 
 const getMonthAbbreviation = monthNumber => {
   if (monthNumber < 1 || monthNumber > 12) {
@@ -33,7 +34,7 @@ const CalendarBorder = styled.div`
 `;
 
 const MonthText = styled.div`
-  font-family: Helvetica, Tahoma, Geneva, sans-serif;
+  font-family: ${Helvetica};
   font-size: 12px;
   height: 13px;
   margin: 2px;
@@ -53,7 +54,7 @@ const DayContainer = styled.div`
 `;
 
 const DayText = styled.div`
-  font-family: Helvetica, Tahoma, Geneva, sans-serif;
+  font-family: ${Helvetica};
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;

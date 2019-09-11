@@ -1,4 +1,7 @@
 import NavBar from '../components/NavBar';
+import Hero from '../components/Hero';
+import HeroSection from '../components/HeroSection';
+import { HeroTitle, HeroSubtitle } from '../components/HeroText';
 import HeaderSection from '../components/HeaderSection';
 import BodySection from '../components/BodySection';
 import CenteredSection from '../components/CenteredSection';
@@ -11,7 +14,19 @@ import ImageGrid from '../components/ImageGrid';
 
 export default () => (
   <div>
-    <NavBar />
+    <Hero imageUrl='http://www.innovateli.com/wp/wp-content/uploads/2016/02/IMG_6664-777x437.jpg'>
+      <NavBar />
+      <HeroSection>
+        <HeroTitle>
+          LEARN.
+          <br />
+          BUILD.
+          <br />
+          COMPETE.
+        </HeroTitle>
+        <HeroSubtitle>UW VEXU Robotics</HeroSubtitle>
+      </HeroSection>
+    </Hero>
     <HeaderSection>WHO WE ARE</HeaderSection>
     <BodySection>
       We’re a team of University of Waterloo students who design, build, and

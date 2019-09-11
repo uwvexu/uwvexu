@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const yellow = '#ffd600';
 
+const Helvetica = 'Helvetica, Tahoma, Geneva, sans-serif';
+
 const Spacer = styled.div`
   flex: 1;
 `;
@@ -16,4 +18,4 @@ const FlexContainer = styled.div`
   align-items: center;
 `;
 
-export { yellow, Spacer, Logo, FlexContainer };
+export { yellow, Helvetica, Spacer, Logo, FlexContainer };

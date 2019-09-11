@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Helvetica } from './Styles';
 
 export default styled.div`
-  padding: 5rem 15rem;
-  color: black;
-  font-size: 22px;
+  padding: 12rem 15rem;
   font-family: ${Helvetica};
-  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 1.15;
+  letter-spacing: 0.5rem;
 `;

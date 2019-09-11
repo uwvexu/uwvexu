@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import NextLink from './NextLink';
 import { yellow, FlexContainer, Spacer, Logo } from './Styles';
 
-const NavContainer = styled(FlexContainer)`
-  background-color: darkgray; /* remove this later */
-`;
-
 const MenuText = styled.div`
   margin-left: 2rem;
   margin-right: 2rem;
@@ -20,6 +16,7 @@ const MenuOption = styled(MenuText)`
   transition: all 0.2s;
   :hover {
     color: ${yellow};
+  }
 `;
 
 const MenuButton = styled(MenuText)`
@@ -38,14 +35,19 @@ const MenuButton = styled(MenuText)`
 
 export default () => {
   return (
-    <NavContainer>
-      <Logo width="200px" src='https://oappa.ca/wp-content/uploads/2015/10/UniversityOfWaterloo_logo_horiz_rgb3.png' />
+    <FlexContainer>
+      <Logo
+        width='200px'
+        src='https://waterlooworks.uwaterloo.ca/site/images/logo-right.png'
+      />
       <Spacer />
       <MenuOption>ABOUT</MenuOption>
       <MenuOption>EVENTS</MenuOption>
       <MenuOption>SPONSOR</MenuOption>
       <MenuOption>CONTACT</MenuOption>
-      <NextLink href="https://forms.gle/WGnEERX5HZF1xDwb7" external><MenuButton>JOIN</MenuButton></NextLink>
-    </NavContainer>
+      <NextLink href='https://forms.gle/WGnEERX5HZF1xDwb7' external>
+        <MenuButton>JOIN</MenuButton>
+      </NextLink>
+    </FlexContainer>
   );
 };
