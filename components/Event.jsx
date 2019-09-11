@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import CalendarIcon from './CalendarIcon';
-import TextBox from '../components/TextBox';
 
 const getMonthFullName = monthNumber => {
   if (monthNumber < 1 || monthNumber > 12) {
@@ -69,14 +68,14 @@ export default props => {
       <CalendarIconContainer>
         <CalendarIcon month={props.month} day={props.day} />
       </CalendarIconContainer>
-      <TextBox>
+      <div>
         <DateHeader>
           {props.dayOfWeek}, {getMonthFullName(props.month)}{' '}
           {getDayFullName(props.day)}
         </DateHeader>
         <br />
         {props.children}
-      </TextBox>
+      </div>
     </Container>
   );
 };

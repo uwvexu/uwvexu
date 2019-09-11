@@ -33,7 +33,6 @@ const CalendarBorder = styled.div`
 `;
 
 const MonthText = styled.div`
-  font-family: Helvetica, Tahoma, Geneva, sans-serif;
   font-size: 12px;
   height: 13px;
   margin: 2px;
@@ -53,7 +52,6 @@ const DayContainer = styled.div`
 `;
 
 const DayText = styled.div`
-  font-family: Helvetica, Tahoma, Geneva, sans-serif;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;

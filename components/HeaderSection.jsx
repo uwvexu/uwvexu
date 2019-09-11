@@ -12,18 +12,21 @@ const HeaderText = styled.div`
   font-size: 80px;
   color: white;
   font-weight: bold;
-  left: 17%;
+  margin-left: 15rem;
   bottom: -18px;
   position: absolute;
 `;
 
 /**
  * The header for a section of the page
- * @param {{ children: React.ReactNode }} props
+ * @param {{
+ *   children: React.ReactNode;
+ *   id?: string;
+ * }} props
  */
 export default props => {
   return (
-    <HeaderContainer>
+    <HeaderContainer id={props.id}>
       <HeaderText>{props.children}</HeaderText>
     </HeaderContainer>
   );

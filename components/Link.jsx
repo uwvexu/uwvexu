@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import NextLink from '../components/NextLink';
 import { yellow } from './Styles';
 
 const Link = styled.span`
@@ -17,9 +18,14 @@ const Link = styled.span`
  * A text link
  * @param {{
  *   children: React.ReactNode
- *   onClick: () => void
+ *   href: string
+ *   external?: boolean
  * }} props
  */
-export default (props) => {
-  return <Link>{props.children}</Link>
+export default props => {
+  return (
+    <NextLink href={props.href} external={props.external}>
+      <Link>{props.children}</Link>
+    </NextLink>
+  );
 };
