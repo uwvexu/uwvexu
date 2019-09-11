@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   position: relative;
   margin: 5rem 0;
-  left: 15%;
-  width: 70%;
+  left: 20%;
+  width: 60%;
 `;
 
 /**

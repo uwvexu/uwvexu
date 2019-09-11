@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+body::selection {
+  background: #ffd600;
+}
+
 a {
   all: unset;
 }

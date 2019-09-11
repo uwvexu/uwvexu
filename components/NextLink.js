@@ -11,7 +11,7 @@ const NextLink = ({ href, children, external }) => {
     return (
       <Link href={href}>
         {/* eslint-disable-next-line */}
-        <a className={classes}>{children}</a>
+        <a>{children}</a>
       </Link>
     );
   }

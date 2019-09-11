@@ -8,10 +8,12 @@ import Button from '../components/BodyButton';
 import ImageSection from '../components/ImageSection';
 import Footer from '../components/Footer';
 import Event from '../components/Event';
+import Form from '../components/Form';
 
 export default () => (
   <div>
     <NavBar />
+
     <HeaderSection>WHO WE ARE</HeaderSection>
     <BodySection>
       <TextBox>
@@ -28,6 +30,7 @@ export default () => (
       <br />
       <NextLink href="https://forms.gle/WGnEERX5HZF1xDwb7" external><Button>JOIN US</Button></NextLink>
     </BodySection>
+
     <ImageSection
       imageUrls={[
         'https://guinnessworldrecords.com/Images/Largest-robot-competition-VEX-Worlds_tcm25-426572.jpg',
@@ -35,6 +38,7 @@ export default () => (
         'https://i.ytimg.com/vi/CDDGBcs0TFM/hqdefault.jpg'
       ]}
     />
+
     <HeaderSection>EVENTS</HeaderSection>
     <BodySection>
       <Event month={9} day={19} dayOfWeek='Thursday'>
@@ -53,6 +57,16 @@ export default () => (
         Hall, our team bus will be leaving at 9am in front of E7
       </Event>
     </BodySection>
+
+    <HeaderSection>CONTACT US</HeaderSection>
+    <BodySection>
+      <TextBox>
+        Whether you are a student wanting to join, or a potential sponsor, we'd love to hear from you!
+        Fill out the form below to get in touch!
+      </TextBox>
+      <Form />
+    </BodySection>
+
     <Footer />
   </div>
 );
