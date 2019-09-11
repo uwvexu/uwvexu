@@ -19,11 +19,14 @@ const HeaderText = styled.div`
 
 /**
  * The header for a section of the page
- * @param {{ children: React.ReactNode }} props
+ * @param {{
+ *   children: React.ReactNode;
+ *   id?: string;
+ * }} props
  */
 export default props => {
   return (
-    <HeaderContainer>
+    <HeaderContainer id={props.id}>
       <HeaderText>{props.children}</HeaderText>
     </HeaderContainer>
   );

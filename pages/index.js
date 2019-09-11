@@ -27,7 +27,7 @@ export default () => (
         <HeroSubtitle>UW VEXU Robotics</HeroSubtitle>
       </HeroSection>
     </Hero>
-    <HeaderSection>WHO WE ARE</HeaderSection>
+    <HeaderSection id='about'>WHO WE ARE</HeaderSection>
     <BodySection>
       We’re a team of University of Waterloo students who design, build, and
       program robots to compete at the VEXU World Championships. <br />
@@ -55,7 +55,7 @@ export default () => (
         'https://i.ytimg.com/vi/CDDGBcs0TFM/hqdefault.jpg'
       ]}
     />
-    <HeaderSection>EVENTS</HeaderSection>
+    <HeaderSection id='events'>EVENTS</HeaderSection>
     <BodySection>
       <Event month={9} day={19} dayOfWeek='Thursday'>
         Fall 2019 first meeting - all welcome!
@@ -73,7 +73,7 @@ export default () => (
         Hall, our team bus will be leaving at 9am in front of E7
       </Event>
     </BodySection>
-    <CenteredSection imageUrl='http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg'>
+    <CenteredSection id='sponsor' imageUrl='http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg'>
       UWaterloo VEXU Robotics would not be possible without the help of our
       genourous sponsors.
       <br />
@@ -96,6 +96,7 @@ export default () => (
         'http://nserc-hi-am.ca/wp-content/uploads/2018/11/Waterloo_Engineering_logo_rgb-1-e1542983138323.png'
       ]}
     />
+    <HeaderSection id='contact'>CONTACT US</HeaderSection>
     <Footer />
   </div>
 );

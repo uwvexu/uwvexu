@@ -41,10 +41,23 @@ export default () => {
         src='https://waterlooworks.uwaterloo.ca/site/images/logo-right.png'
       />
       <Spacer />
-      <MenuOption>ABOUT</MenuOption>
-      <MenuOption>EVENTS</MenuOption>
-      <MenuOption>SPONSOR</MenuOption>
-      <MenuOption>CONTACT</MenuOption>
+
+      <MenuOption>
+        <a href='#about'>ABOUT</a>
+      </MenuOption>
+
+      <MenuOption>
+        <a href='#events'>EVENTS</a>
+      </MenuOption>
+
+      <MenuOption>
+        <a href='#sponsor'>SPONSOR</a>
+      </MenuOption>
+
+      <MenuOption>
+        <a href='#contact'>CONTACT</a>
+      </MenuOption>
+
       <NextLink href='https://forms.gle/WGnEERX5HZF1xDwb7' external>
         <MenuButton>JOIN</MenuButton>
       </NextLink>
