@@ -7,6 +7,7 @@ import { Button, DarkButton } from '../components/Button';
 import ImageSection from '../components/ImageSection';
 import Footer from '../components/Footer';
 import Event from '../components/Event';
+import ImageGrid from '../components/ImageGrid';
 
 export default () => (
   <div>
@@ -68,6 +69,18 @@ export default () => (
       <br />
       <DarkButton>BECOME A SPONSOR</DarkButton>
     </CenteredSection>
+    <HeaderSection>SPONSORS</HeaderSection>
+    <ImageGrid
+      imageUrls={[
+        'https://uwaterloo.ca/engineering-endowment-fund/sites/ca.engineering-endowment-fund/files/uploads/images/weef_logo_yellow_0.png',
+        'https://uwaterloo.ca/math-endowment-fund/sites/ca.math-endowment-fund/files/uploads/images/mef_-_final_logo.png',
+        'https://www.engsoc.uwaterloo.ca/wp-content/uploads/2018/01/cropped-EngSoc_Square_Logo-300x300.png',
+        'https://www.robotevents.com/uploads/events/33015/d6e8f72b99f4b44b1d27cd636f5d4d73.jpg',
+        'https://uwaterloo.ca/robohub/sites/ca.robohub/files/uploads/images/main-robohub-logo-rgb-1000px.png',
+        'https://upload.wikimedia.org/wikipedia/en/3/38/Vex-Logo.jpg',
+        'http://nserc-hi-am.ca/wp-content/uploads/2018/11/Waterloo_Engineering_logo_rgb-1-e1542983138323.png'
+      ]}
+    />
     <Footer />
   </div>
 );
