@@ -19,8 +19,8 @@ const Image = styled.img`
 export default props => {
   return (
     <Container>
-      {props.imageUrls.map(imageUrl => (
-        <Image src={imageUrl} />
+      {props.imageUrls.map((imageUrl, index) => (
+        <Image key={index} src={imageUrl} />
       ))}
     </Container>
   );
