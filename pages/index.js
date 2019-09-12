@@ -63,13 +63,22 @@ export default () => (
     <HeaderSection id='events'>EVENTS</HeaderSection>
     <BodySection>
       {events.map((event, index) => (
-        <Event month={event.month} day={event.day} dayOfWeek={event.weekday} space={index !== events.length-1}>
+        <Event
+          key={index}
+          month={event.month}
+          day={event.day}
+          dayOfWeek={event.weekday}
+          space={index !== events.length - 1}
+        >
           {event.message}
         </Event>
       ))}
     </BodySection>
 
-    <CenteredSection id='sponsor' imageUrl='http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg'>
+    <CenteredSection
+      id='sponsor'
+      imageUrl='http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg'
+    >
       UWaterloo VEXU Robotics would not be possible without the help of our
       genourous sponsors.
       <br />
@@ -95,8 +104,8 @@ export default () => (
     />
     <HeaderSection id='contact'>CONTACT US</HeaderSection>
     <BodySection>
-      Whether you are a student wanting to join, or a potential sponsor, we'd love to hear from you!
-      Fill out the form below to get in touch!
+      Whether you are a student wanting to join, or a potential sponsor, we'd
+      love to hear from you! Fill out the form below to get in touch!
       <Form />
     </BodySection>
     <Footer />
