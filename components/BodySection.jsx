@@ -22,7 +22,6 @@ export default styled.div`
 
   @media screen and (max-width: ${responsiveSizes.largeMobile}px) {
     padding: 2.5rem 4rem;
-    font-size: 12px;
   }
 
   @media screen and (max-width: ${responsiveSizes.smallMobile}px) {

@@ -15,8 +15,8 @@ const HeaderContainer = styled.div`
     height: 3rem;
   }
 
-  @media screen and (max-width: ${responsiveSizes.largeMobile}px) {
-    height: 2.25rem;
+  @media screen and (max-width: ${responsiveSizes.smallMobile}px) {
+    height: 2.5rem;
   }
 `;
 
@@ -49,13 +49,16 @@ const HeaderText = styled.div`
 
   @media screen and (max-width: ${responsiveSizes.largeMobile}px) {
     margin: 0 4rem;
-    font-size: 24px;
+    /* font-size: 24px;
     letter-spacing: 2px;
-    bottom: -6px;
+    bottom: -6px; */
   }
 
   @media screen and (max-width: ${responsiveSizes.smallMobile}px) {
     margin: 0 2rem;
+    font-size: 24px;
+    letter-spacing: 2px;
+    bottom: -6px;
   }
 `;
 

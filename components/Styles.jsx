@@ -21,5 +21,5 @@ export const responsiveSizes = {
   smallScreen: 1024,
   tablet: 768,
   largeMobile: 425,
-  smallMobile: 320
+  smallMobile: 375
 };
