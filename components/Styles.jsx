@@ -1,25 +1,26 @@
 import styled from 'styled-components';
 
-const yellow = '#ffd600';
+export const yellow = '#ffd600';
 
-const Spacer = styled.div`
+export const Spacer = styled.div`
   flex: 1;
 `;
 
-const Logo = styled.img`
+export const Logo = styled.img`
   width: ${props => props.height};
   padding: 1rem;
 `;
 
-const FlexContainer = styled.div`
+export const FlexContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
 `;
 
-export {
-  yellow,
-  Spacer,
-  Logo,
-  FlexContainer,
+export const responsiveSizes = {
+  largeScreen: 1440,
+  smallScreen: 1024,
+  tablet: 768,
+  largeMobile: 425,
+  smallMobile: 375
 };
