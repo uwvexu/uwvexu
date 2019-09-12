@@ -10,11 +10,13 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+
 
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "BodySection",
   componentId: "uwxt0r-0"
-})(["padding:5rem 15rem;color:black;font-size:22px;letter-spacing:2px;"]));
+})(["padding:5rem 16rem;color:black;font-size:22px;letter-spacing:2px;@media screen and (max-width:", "px){padding:5rem 12rem;}@media screen and (max-width:", "px){padding:5rem 8rem;font-size:16px;}@media screen and (max-width:", "px){padding:2.5rem 6rem;}@media screen and (max-width:", "px){padding:2.5rem 4rem;}@media screen and (max-width:", "px){padding:1.5rem 2rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_1__["responsiveSizes"].smallMobile));
 
 /***/ }),
 
@@ -40,12 +42,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Button__StyledButton",
   componentId: "cxv2rm-0"
-})(["display:inline-block;font-size:20px;cursor:pointer;user-select:none;border:2px solid black;color:black;padding:0.6rem 4rem;transition:all 0.2s;:hover{background-color:black;border-color:black;color:", ";}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
-var DarkStyledButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledButton).withConfig({
-  displayName: "Button__DarkStyledButton",
+})(["display:inline-block;font-size:20px;cursor:pointer;user-select:none;border:2px solid black;color:black;padding:0.8rem 5rem;transition:all 0.2s;:hover{background-color:black;border-color:black;color:", ";}@media screen and (max-width:", "px){padding:0.6rem 4rem;}@media screen and (max-width:", "px){padding:0.5rem 3rem;font-size:16px;}@media screen and (max-width:", "px){padding:0.4rem 2rem;}@media screen and (max-width:", "px){padding:0.3rem 1.5rem;font-size:12px;}@media screen and (max-width:", "px){padding:0.2rem 1rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallMobile);
+var StyledDarkButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledButton).withConfig({
+  displayName: "Button__StyledDarkButton",
   componentId: "cxv2rm-1"
 })(["border:2px solid white;color:white;:hover{background-color:white;border-color:white;color:black;}"]);
 /**
@@ -62,13 +65,13 @@ var Button = function Button(props) {
     external: props.external,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 63
     },
     __self: this
   }, __jsx(StyledButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 64
     },
     __self: this
   }, props.children));
@@ -79,13 +82,13 @@ var DarkButton = function DarkButton(props) {
     external: props.external,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 71
     },
     __self: this
-  }, __jsx(DarkStyledButton, {
+  }, __jsx(StyledDarkButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 72
     },
     __self: this
   }, props.children));
@@ -182,14 +185,16 @@ var DayText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.with
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _BodySection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BodySection */ "./components/BodySection.jsx");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(_BodySection__WEBPACK_IMPORTED_MODULE_1__["default"]).withConfig({
   displayName: "CenteredSection",
   componentId: "zm25cw-0"
-})(["padding:5rem 32rem;text-align:center;color:white;background-image:url(", ");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;background-color:rgba(0,0,0,.7);background-blend-mode:darken;"], function (props) {
+})(["padding:5rem 32rem;text-align:center;color:white;background-image:url(", ");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;background-color:rgba(0,0,0,0.7);background-position:center;background-blend-mode:darken;@media screen and (max-width:", "px){padding:5rem 16rem;}@media screen and (max-width:", "px){padding:5rem 12rem;}@media screen and (max-width:", "px){padding:2.5rem 8rem;}@media screen and (max-width:", "px){padding:2.5rem 5rem;}@media screen and (max-width:", "px){padding:1.5rem 4rem;}"], function (props) {
   return props.imageUrl;
-}));
+}, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallMobile));
 
 /***/ }),
 
@@ -672,18 +677,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
 var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/HeaderSection.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 var HeaderContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "HeaderSection__HeaderContainer",
   componentId: "mjkebd-0"
-})(["background-color:black;position:relative;height:7rem;letter-spacing:8px;"]);
+})(["background-color:black;position:relative;height:7rem;@media screen and (max-width:", "px){height:4.5rem;}@media screen and (max-width:", "px){height:3rem;}@media screen and (max-width:", "px){height:2.5rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallMobile);
 var HeaderText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "HeaderSection__HeaderText",
   componentId: "mjkebd-1"
-})(["font-size:80px;color:white;font-weight:bold;margin-left:15rem;bottom:-18px;position:absolute;"]);
+})(["font-size:80px;color:white;font-weight:bold;margin:0 16rem;bottom:-18px;position:absolute;letter-spacing:8px;@media screen and (max-width:", "px){margin:0 12rem;}@media screen and (max-width:", "px){margin:0 8rem;font-size:50px;letter-spacing:6px;bottom:-12px;}@media screen and (max-width:", "px){margin:0 6rem;font-size:28px;letter-spacing:4px;bottom:-6px;}@media screen and (max-width:", "px){margin:0 4rem;}@media screen and (max-width:", "px){margin:0 2rem;font-size:24px;letter-spacing:2px;bottom:-6px;}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallMobile);
 /**
  * The header for a section of the page
  * @param {{
@@ -697,13 +704,13 @@ var HeaderText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.w
     id: props.id,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 74
     },
     __self: this
   }, __jsx(HeaderText, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 75
     },
     __self: this
   }, props.children));
@@ -838,14 +845,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
 var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/ImageSection.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 var FlexRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ImageSection__FlexRow",
   componentId: "sc-1tvgsie-0"
-})(["display:flex;flex-direction:row;height:18.75rem;@media (max-width:576px){>:nth-child(2){display:none;}}@media (max-width:768px){>:nth-child(3){display:none;}}"]);
+})(["display:flex;flex-direction:row;height:18.75rem;@media (max-width:", "px){>:nth-child(3){display:none;}}@media (max-width:576px){>:nth-child(2){display:none;}}"], _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].smallScreen);
 var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ImageSection__ImageContainer",
   componentId: "sc-1tvgsie-1"
@@ -862,7 +871,7 @@ var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withCo
   return __jsx(FlexRow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, props.imageUrls.map(function (imageUrl, index) {
@@ -870,14 +879,14 @@ var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withCo
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 45
       },
       __self: this
     }, __jsx(Image, {
       src: imageUrl,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 46
       },
       __self: this
     }));
@@ -1129,7 +1138,7 @@ var NextLink = function NextLink(_ref) {
 /*!*******************************!*\
   !*** ./components/Styles.jsx ***!
   \*******************************/
-/*! exports provided: yellow, Spacer, Logo, FlexContainer */
+/*! exports provided: yellow, Spacer, Logo, FlexContainer, responsiveSizes */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1138,6 +1147,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spacer", function() { return Spacer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlexContainer", function() { return FlexContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "responsiveSizes", function() { return responsiveSizes; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 var yellow = '#ffd600';
@@ -1155,7 +1165,13 @@ var FlexContainer = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].di
   displayName: "Styles__FlexContainer",
   componentId: "sc-1u11rvr-2"
 })(["display:flex;flex-direction:row;align-items:center;"]);
-
+var responsiveSizes = {
+  largeScreen: 1440,
+  smallScreen: 1024,
+  tablet: 768,
+  largeMobile: 425,
+  smallMobile: 375
+};
 
 /***/ }),
 
@@ -14732,7 +14748,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************/
@@ -14755,5 +14771,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
