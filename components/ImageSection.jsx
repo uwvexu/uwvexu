@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import { responsiveSizes } from './Styles';
 
 const FlexRow = styled.div`
   display: flex;
   flex-direction: row;
   height: 18.75rem;
 
-  @media (max-width: 576px) {
-    > :nth-child(2) {
+  @media (max-width: ${responsiveSizes.smallScreen}px) {
+    > :nth-child(3) {
       display: none;
     }
   }
 
-  @media (max-width: 768px) {
-    > :nth-child(3) {
+  @media (max-width: 576px) {
+    > :nth-child(2) {
       display: none;
     }
   }
