@@ -6,6 +6,12 @@ module.exports = {
   ],
   'plugins': [
     ['transform-define', env],
-    "babel-plugin-styled-components"
+    "babel-plugin-styled-components",
+    "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
   ]
 }
