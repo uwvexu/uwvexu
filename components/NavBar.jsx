@@ -26,6 +26,7 @@ const MenuButton = styled(MenuText)`
   padding-bottom: 0.6rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  margin-right: 1rem;
   transition: all 0.2s;
   :hover {
     background-color: ${yellow};
@@ -36,10 +37,9 @@ const MenuButton = styled(MenuText)`
 export default () => {
   return (
     <FlexContainer>
-      <Logo
-        width='200px'
-        src='https://waterlooworks.uwaterloo.ca/site/images/logo-right.png'
-      />
+      <NextLink href='/'>
+        <Logo width='200px' src='/static/logo_w.png' />
+      </NextLink>
       <Spacer />
 
       <MenuOption>

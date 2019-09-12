@@ -10,6 +10,7 @@ import { Button, DarkButton } from '../components/Button';
 import ImageSection from '../components/ImageSection';
 import Footer from '../components/Footer';
 import Event from '../components/Event';
+import { events } from '../events';
 import Form from '../components/Form';
 import ImageGrid from '../components/ImageGrid';
 
@@ -61,21 +62,11 @@ export default () => (
 
     <HeaderSection id='events'>EVENTS</HeaderSection>
     <BodySection>
-      <Event month={9} day={19} dayOfWeek='Thursday'>
-        Fall 2019 first meeting - all welcome!
-      </Event>
-      <br />
-      <br />
-      <Event month={10} day={12} dayOfWeek='Tuesday'>
-        Krispe Cream fundraiser - come out to slc and buy a box of donuts to
-        help support our team!
-      </Event>
-      <br />
-      <br />
-      <Event month={11} day={25} dayOfWeek='Saturday'>
-        First competiton - held at the University of Toronto in Carl Polluk
-        Hall, our team bus will be leaving at 9am in front of E7
-      </Event>
+      {events.map((event, index) => (
+        <Event month={event.month} day={event.day} dayOfWeek={event.weekday} space={index !== events.length-1}>
+          {event.message}
+        </Event>
+      ))}
     </BodySection>
 
     <CenteredSection id='sponsor' imageUrl='http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg'>
