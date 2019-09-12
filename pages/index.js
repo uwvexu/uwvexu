@@ -13,6 +13,7 @@ import Event from '../components/Event';
 import { events } from '../events';
 import Form from '../components/Form';
 import ImageGrid from '../components/ImageGrid';
+import "../main.scss";
 
 export default () => (
   <div>
