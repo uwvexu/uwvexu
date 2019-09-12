@@ -18,6 +18,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withPlugins([
-  withSass,
-], nextConfig);
+module.exports = withSass(nextConfig);
