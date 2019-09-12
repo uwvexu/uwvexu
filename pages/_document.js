@@ -13,7 +13,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>UW VEXU Robotics</title>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <link rel="icon" type="image/png" href="/static/favicon.png" />
           <script src="https://use.fontawesome.com/7e50edc346.js"></script>
