@@ -5,7 +5,6 @@ import { yellow, FlexContainer, Spacer, Logo } from './Styles';
 
 const FooterContainer = styled(FlexContainer)`
   background-color: black;
-  padding: 0 1rem;
 `;
 
 const Logos = styled.div`
@@ -19,12 +18,18 @@ const Logos = styled.div`
       color: ${yellow};
     }
   }
+
+  :last-child {
+    margin-right: 0.5rem;
+  }
 `;
 
 export default () => {
   return (
     <FooterContainer>
-      <Logo width="300px" src='https://oappa.ca/wp-content/uploads/2015/10/UniversityOfWaterloo_logo_horiz_rgb3.png' />
+      <NextLink href='/'>
+        <Logo width='300px' src='/static/logo_w.png' />
+      </NextLink>
       <Spacer />
       <Logos>
         <NextLink href="mailto:uwvexu@gmail.com" external><i className="fa fa-envelope"></i></NextLink>

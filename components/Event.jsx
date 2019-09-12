@@ -64,18 +64,21 @@ const DateHeader = styled.span`
  */
 export default props => {
   return (
-    <Container>
-      <CalendarIconContainer>
-        <CalendarIcon month={props.month} day={props.day} />
-      </CalendarIconContainer>
-      <div>
-        <DateHeader>
-          {props.dayOfWeek}, {getMonthFullName(props.month)}{' '}
-          {getDayFullName(props.day)}
-        </DateHeader>
-        <br />
-        {props.children}
-      </div>
-    </Container>
+    <>
+      <Container>
+        <CalendarIconContainer>
+          <CalendarIcon month={props.month} day={props.day} />
+        </CalendarIconContainer>
+        <div>
+          <DateHeader>
+            {props.dayOfWeek}, {getMonthFullName(props.month)}{' '}
+            {getDayFullName(props.day)}
+          </DateHeader>
+          <br />
+          {props.children}
+        </div>
+      </Container>
+      {props.space && <><br/><br/></>}
+    </>
   );
 };

@@ -8,6 +8,7 @@ export const Spacer = styled.div`
 
 export const Logo = styled.img`
   width: ${props => props.height};
+  padding: 1rem;
 `;
 
 export const FlexContainer = styled.div`
