@@ -11,6 +11,7 @@ const StyledButton = styled.div`
   border: 2px solid black;
   color: black;
   padding: 0.8rem 5rem;
+  text-align: center;
   transition: all 0.2s;
   :hover {
     background-color: black;

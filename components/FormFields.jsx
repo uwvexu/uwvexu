@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { yellow } from './Styles';
+import { yellow, responsiveSizes } from './Styles';
 
 const FlexRow = styled.div`
   display: flex;
@@ -13,10 +13,20 @@ const FlexRow = styled.div`
   }
 
   > *:not(:first-child) {
-  margin-left: 1rem;
+    margin-left: 1rem;
+  }
 
   > button {
     justify-content: flex-end;
+  }
+
+  @media (max-width: ${responsiveSizes.tablet}px) {
+    flex-direction: column;
+
+    > *:not(:first-child) {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
   }
 }
 `;

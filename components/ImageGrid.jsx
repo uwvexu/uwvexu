@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BodySection from './BodySection';
+import { responsiveSizes } from './Styles';
 
 const Container = styled(BodySection)`
   display: flex;
@@ -9,8 +10,16 @@ const Container = styled(BodySection)`
 `;
 
 const Image = styled.img`
-  height: 150px;
+  max-height: 150px;
+  height: 100%;
+  width: auto;
   margin: 3rem;
+
+  @media (max-width: ${responsiveSizes.tablet}px) {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
 `;
 
 /**

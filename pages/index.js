@@ -16,7 +16,7 @@ import ImageGrid from '../components/ImageGrid';
 import "../main.scss";
 
 export default () => (
-  <div>
+  <>
     <Hero imageUrl='http://www.innovateli.com/wp/wp-content/uploads/2016/02/IMG_6664-777x437.jpg'>
       <NavBar />
       <HeroSection>
@@ -88,7 +88,7 @@ export default () => (
       Click the button below for more information.
       <br />
       <br />
-      <DarkButton>BECOME A SPONSOR</DarkButton>
+      <DarkButton href="https://forms.gle/so4Ep1rXtF3RMJsh7" external>BECOME A SPONSOR</DarkButton>
     </CenteredSection>
 
     <HeaderSection>SPONSORS</HeaderSection>
@@ -110,5 +110,5 @@ export default () => (
       <Form />
     </BodySection>
     <Footer />
-  </div>
+  </>
 );

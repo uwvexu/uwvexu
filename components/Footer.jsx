@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import NextLink from './NextLink';
-import { yellow, FlexContainer, Spacer, Logo } from './Styles';
+import { yellow, FlexContainer, Spacer, Logo, responsiveSizes } from './Styles';
 
 const FooterContainer = styled(FlexContainer)`
   background-color: black;
+
+  @media (max-width: ${responsiveSizes.tablet}px) {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
 `;
 
 const Logos = styled.div`
