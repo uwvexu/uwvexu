@@ -46,7 +46,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Button__StyledButton",
   componentId: "cxv2rm-0"
-})(["display:inline-block;font-size:20px;cursor:pointer;user-select:none;border:2px solid black;color:black;padding:0.8rem 5rem;transition:all 0.2s;:hover{background-color:black;border-color:black;color:", ";}@media screen and (max-width:", "px){padding:0.6rem 4rem;}@media screen and (max-width:", "px){padding:0.5rem 3rem;font-size:16px;}@media screen and (max-width:", "px){padding:0.4rem 2rem;}@media screen and (max-width:", "px){padding:0.3rem 1.5rem;font-size:12px;}@media screen and (max-width:", "px){padding:0.2rem 1rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallMobile);
+})(["display:inline-block;font-size:20px;cursor:pointer;user-select:none;border:2px solid black;color:black;padding:0.8rem 5rem;text-align:center;transition:all 0.2s;:hover{background-color:black;border-color:black;color:", ";}@media screen and (max-width:", "px){padding:0.6rem 4rem;}@media screen and (max-width:", "px){padding:0.5rem 3rem;font-size:16px;}@media screen and (max-width:", "px){padding:0.4rem 2rem;}@media screen and (max-width:", "px){padding:0.3rem 1.5rem;font-size:12px;}@media screen and (max-width:", "px){padding:0.2rem 1rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].largeMobile, _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallMobile);
 var StyledDarkButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(StyledButton).withConfig({
   displayName: "Button__StyledDarkButton",
   componentId: "cxv2rm-1"
@@ -65,13 +65,13 @@ var Button = function Button(props) {
     external: props.external,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 64
     },
     __self: this
   }, __jsx(StyledButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 65
     },
     __self: this
   }, props.children));
@@ -82,13 +82,13 @@ var DarkButton = function DarkButton(props) {
     external: props.external,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: this
   }, __jsx(StyledDarkButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: this
   }, props.children));
@@ -349,7 +349,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var FooterContainer = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"]).withConfig({
   displayName: "Footer__FooterContainer",
   componentId: "sc-1ju438-0"
-})(["background-color:black;"]);
+})(["background-color:black;@media (max-width:", "px){flex-direction:column;padding:1rem 0;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
 var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Footer__Logos",
   componentId: "sc-1ju438-1"
@@ -358,14 +358,14 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
   return __jsx(FooterContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 34
     },
     __self: this
   }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 35
     },
     __self: this
   }, __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Logo"], {
@@ -373,19 +373,19 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
     src: "/static/logo_w.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 36
     },
     __self: this
   })), __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Spacer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 38
     },
     __self: this
   }), __jsx(Logos, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 39
     },
     __self: this
   }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -393,14 +393,14 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
     external: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-envelope",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: this
   })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -408,14 +408,14 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
     external: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-facebook-f",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: this
   })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -423,14 +423,14 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
     external: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 42
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 42
     },
     __self: this
   })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -438,14 +438,14 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
     external: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-slack",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: this
   })), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -453,14 +453,14 @@ var Logos = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withCo
     external: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-youtube-play",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   }))));
@@ -638,9 +638,9 @@ __webpack_require__.r(__webpack_exports__);
 var FlexRow = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "FormFields__FlexRow",
   componentId: "skpclf-0"
-})(["display:flex;flex-direction:row;padding-top:1rem;justify-content:", ";*{flex:1;}> *:not(:first-child){margin-left:1rem;> button{justify-content:flex-end;}}"], function (props) {
+})(["display:flex;flex-direction:row;padding-top:1rem;justify-content:", ";*{flex:1;}> *:not(:first-child){margin-left:1rem;}> button{justify-content:flex-end;}@media (max-width:", "px){flex-direction:column;> *:not(:first-child){margin-left:0rem;margin-top:1rem;}}}"], function (props) {
   return props.end ? "flex-end" : "flex-start";
-});
+}, _Styles__WEBPACK_IMPORTED_MODULE_2__["responsiveSizes"].tablet);
 var StyledForm = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].form.withConfig({
   displayName: "FormFields__StyledForm",
   componentId: "skpclf-1"
@@ -732,7 +732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Hero",
   componentId: "fb966e-0"
-})(["background-image:url(", ");background-size:cover;background-attachment:fixed;background-repeat:no-repeat;background-color:rgba(0,0,0,0.7);background-blend-mode:darken;"], function (props) {
+})(["background-image:url(", ");background-size:cover;background-repeat:no-repeat;background-color:rgba(0,0,0,0.7);background-blend-mode:darken;"], function (props) {
   return props.imageUrl;
 }));
 
@@ -752,7 +752,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "HeroSection",
   componentId: "sc-1pvft2f-0"
-})(["padding:12rem 15rem;font-weight:bold;line-height:1.15;letter-spacing:0.5rem;"]));
+})(["padding:12rem 15rem;font-weight:bold;line-height:1.15;letter-spacing:0.5rem;@media (max-width:920px){padding:5rem;}@media (max-width:500px){padding:5rem 3rem;}"]));
 
 /***/ }),
 
@@ -774,11 +774,11 @@ __webpack_require__.r(__webpack_exports__);
 var HeroTitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "HeroText__HeroTitle",
   componentId: "euqag-0"
-})(["color:white;font-size:72px;"]);
+})(["color:white;font-size:72px;@media (max-width:640px){font-size:46px;}@media (max-width:500px){font-size:32px;}"]);
 var HeroSubtitle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "HeroText__HeroSubtitle",
   componentId: "euqag-1"
-})(["color:", ";font-size:34px;"], _Styles__WEBPACK_IMPORTED_MODULE_1__["yellow"]);
+})(["color:", ";font-size:34px;@media (max-width:640px){font-size:22px;}@media (max-width:500px){font-size:14px;}"], _Styles__WEBPACK_IMPORTED_MODULE_1__["yellow"]);
 
 /***/ }),
 
@@ -795,8 +795,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _BodySection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BodySection */ "./components/BodySection.jsx");
+/* harmony import */ var _Styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Styles */ "./components/Styles.jsx");
 var _jsxFileName = "/Users/alexgirard/Documents/VEXU/uwvexu.ca/components/ImageGrid.jsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -807,7 +809,7 @@ var Container = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"]
 var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withConfig({
   displayName: "ImageGrid__Image",
   componentId: "sc-1uh8uch-1"
-})(["height:150px;margin:3rem;"]);
+})(["max-height:150px;height:100%;width:auto;margin:3rem;@media (max-width:", "px){width:100%;height:auto;max-height:none;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].tablet);
 /**
  * @param {{ imageUrls: string[] }} props
  */
@@ -816,15 +818,16 @@ var Image = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].img.withCo
   return __jsx(Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 30
     },
     __self: this
-  }, props.imageUrls.map(function (imageUrl) {
+  }, props.imageUrls.map(function (imageUrl, index) {
     return __jsx(Image, {
+      key: index,
       src: imageUrl,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 32
       },
       __self: this
     });
@@ -968,30 +971,123 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+var NavContainer = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"]).withConfig({
+  displayName: "NavBar__NavContainer",
+  componentId: "gz3npb-0"
+})(["@media (max-width:920px){background-color:black;}"]);
+var MobileMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"]).withConfig({
+  displayName: "NavBar__MobileMenu",
+  componentId: "gz3npb-1"
+})(["flex-direction:column;text-align:center;background-color:black;transition:all 0.2s;padding-bottom:1rem;> div{padding-bottom:1rem;}"]);
 var MenuText = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "NavBar__MenuText",
-  componentId: "gz3npb-0"
-})(["margin-left:2rem;margin-right:2rem;font-size:20px;cursor:pointer;user-select:none;"]);
+  componentId: "gz3npb-2"
+})(["margin-left:1.5rem;margin-right:1.5rem;font-size:20px;cursor:pointer;user-select:none;"]);
 var MenuOption = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(MenuText).withConfig({
   displayName: "NavBar__MenuOption",
-  componentId: "gz3npb-1"
+  componentId: "gz3npb-3"
 })(["color:white;transition:all 0.2s;:hover{color:", ";}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
 var MenuButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(MenuText).withConfig({
   displayName: "NavBar__MenuButton",
-  componentId: "gz3npb-2"
+  componentId: "gz3npb-4"
 })(["border:2px solid ", ";color:", ";padding-top:0.6rem;padding-bottom:0.6rem;padding-left:1.25rem;padding-right:1.25rem;margin-right:1rem;transition:all 0.2s;:hover{background-color:", ";color:black;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"], _Styles__WEBPACK_IMPORTED_MODULE_3__["yellow"]);
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"], {
+var TextMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"]).withConfig({
+  displayName: "NavBar__TextMenu",
+  componentId: "gz3npb-5"
+})(["@media (max-width:920px){display:none;}"]);
+var MenuIcon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "NavBar__MenuIcon",
+  componentId: "gz3npb-6"
+})(["unset:all;color:white;padding-right:1.5rem;font-size:30px;"]);
+var ButtonMenu = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_Styles__WEBPACK_IMPORTED_MODULE_3__["FlexContainer"]).withConfig({
+  displayName: "NavBar__ButtonMenu",
+  componentId: "gz3npb-7"
+})(["display:none;@media (max-width:920px){display:block;}"]);
+
+var MenuOptions = __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(MenuOption, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 79
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "#about",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 80
+  },
+  __self: undefined
+}, "ABOUT")), __jsx(MenuOption, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 83
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "#events",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 84
+  },
+  __self: undefined
+}, "EVENTS")), __jsx(MenuOption, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 87
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "#sponsor",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 88
+  },
+  __self: undefined
+}, "SPONSOR")), __jsx(MenuOption, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 91
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "#contact",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 92
+  },
+  __self: undefined
+}, "CONTACT")), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  href: "https://forms.gle/WGnEERX5HZF1xDwb7",
+  external: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 95
+  },
+  __self: undefined
+}, __jsx(MenuButton, {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 96
+  },
+  __self: undefined
+}, "JOIN")));
+
+var NavBar = function NavBar() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      showMobileMenu = _useState[0],
+      setShowMobileMenu = _useState[1];
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(NavContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 105
     },
     __self: this
   }, __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 106
     },
     __self: this
   }, __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Logo"], {
@@ -999,83 +1095,53 @@ var MenuButton = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["default"
     src: "/static/logo_w.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 107
     },
     __self: this
   })), __jsx(_Styles__WEBPACK_IMPORTED_MODULE_3__["Spacer"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 109
     },
     __self: this
-  }), __jsx(MenuOption, {
+  }), __jsx(TextMenu, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 112
     },
     __self: this
-  }, __jsx("a", {
-    href: "#about",
+  }, MenuOptions), __jsx(ButtonMenu, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 117
     },
     __self: this
-  }, "ABOUT")), __jsx(MenuOption, {
+  }, __jsx(MenuIcon, {
+    onClick: function onClick() {
+      return setShowMobileMenu(!showMobileMenu);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 118
     },
     __self: this
-  }, __jsx("a", {
-    href: "#events",
+  }, __jsx("i", {
+    className: "fa fa-bars",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 119
     },
     __self: this
-  }, "EVENTS")), __jsx(MenuOption, {
+  })))), showMobileMenu && __jsx(MobileMenu, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 124
     },
     __self: this
-  }, __jsx("a", {
-    href: "#sponsor",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }, "SPONSOR")), __jsx(MenuOption, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "#contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, "CONTACT")), __jsx(_NextLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    href: "https://forms.gle/WGnEERX5HZF1xDwb7",
-    external: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: this
-  }, __jsx(MenuButton, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }, "JOIN")));
-});
+  }, MenuOptions));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavBar);
 
 /***/ }),
 
@@ -14518,13 +14584,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, __jsx(_components_Hero__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Hero__WEBPACK_IMPORTED_MODULE_2__["default"], {
     imageUrl: "http://www.innovateli.com/wp/wp-content/uploads/2016/02/IMG_6664-777x437.jpg",
     __source: {
       fileName: _jsxFileName,
@@ -14654,6 +14714,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: this
   }, _events__WEBPACK_IMPORTED_MODULE_13__["events"].map(function (event, index) {
     return __jsx(_components_Event__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      key: index,
       month: event.month,
       day: event.day,
       dayOfWeek: event.weekday,
@@ -14669,81 +14730,83 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     imageUrl: "http://media2.govtech.com/images/940*529/Starstruck_Vex_Robotics_CV_2017-01-11.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 79
     },
     __self: this
   }, "UWaterloo VEXU Robotics would not be possible without the help of our genourous sponsors.", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 85
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 86
     },
     __self: this
   }), "Interested in becoming a sponsor? ", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 87
     },
     __self: this
   }), "Click the button below for more information.", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 89
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 90
     },
     __self: this
   }), __jsx(_components_Button__WEBPACK_IMPORTED_MODULE_9__["DarkButton"], {
+    href: "https://forms.gle/so4Ep1rXtF3RMJsh7",
+    external: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 91
     },
     __self: this
   }, "BECOME A SPONSOR")), __jsx(_components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 94
     },
     __self: this
   }, "SPONSORS"), __jsx(_components_ImageGrid__WEBPACK_IMPORTED_MODULE_15__["default"], {
     imageUrls: ['https://uwaterloo.ca/engineering-endowment-fund/sites/ca.engineering-endowment-fund/files/uploads/images/weef_logo_yellow_0.png', 'https://uwaterloo.ca/math-endowment-fund/sites/ca.math-endowment-fund/files/uploads/images/mef_-_final_logo.png', 'https://www.engsoc.uwaterloo.ca/wp-content/uploads/2018/01/cropped-EngSoc_Square_Logo-300x300.png', 'https://www.robotevents.com/uploads/events/33015/d6e8f72b99f4b44b1d27cd636f5d4d73.jpg', 'https://uwaterloo.ca/robohub/sites/ca.robohub/files/uploads/images/main-robohub-logo-rgb-1000px.png', 'https://upload.wikimedia.org/wikipedia/en/3/38/Vex-Logo.jpg', 'http://nserc-hi-am.ca/wp-content/uploads/2018/11/Waterloo_Engineering_logo_rgb-1-e1542983138323.png'],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 95
     },
     __self: this
   }), __jsx(_components_HeaderSection__WEBPACK_IMPORTED_MODULE_5__["default"], {
     id: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 106
     },
     __self: this
   }, "CONTACT US"), __jsx(_components_BodySection__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 107
     },
     __self: this
   }, "Whether you are a student wanting to join, or a potential sponsor, we'd love to hear from you! Fill out the form below to get in touch!", __jsx(_components_Form__WEBPACK_IMPORTED_MODULE_14__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 110
     },
     __self: this
   })), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 112
     },
     __self: this
   }));
@@ -14751,7 +14814,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Falexgirard%2FDocuments%2FVEXU%2Fuwvexu.ca%2Fpages%2Findex.js ***!
   \****************************************************************************************************************************************/
@@ -14774,5 +14837,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
