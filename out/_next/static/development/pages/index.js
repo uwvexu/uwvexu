@@ -43,7 +43,7 @@ var ListWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.
 var ImgWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Awards__ImgWrapper",
   componentId: "dx4r2b-4"
-})(["filter:grayscale(100%);@media screen and (max-width:", "px){margin-bottom:3rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen);
+})(["@media screen and (max-width:", "px){margin-bottom:3rem;}"], _Styles__WEBPACK_IMPORTED_MODULE_3__["responsiveSizes"].smallScreen);
 var MobileWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "Awards__MobileWrapper",
   componentId: "dx4r2b-5"
@@ -112,21 +112,21 @@ var Images = function Images() {
     },
     __self: this
   }, __jsx(_ImageSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    imageUrls: [['static/awards.png'], ['static/robot-side.jpg']],
+    imageUrls: [['static/awards.png', '2020 Awards'], ['static/robot-side.jpg', '24" Robot']],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 61
     },
     __self: this
   }), __jsx(_ImageSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    imageUrls: [['static/comp2.jpg', '70% 70%'], ['static/intake.jpg', 'top']],
+    imageUrls: [['static/comp2.jpg', 'VEX U Canada Competition', '70% 70%'], ['static/intake.jpg', 'Intake Idea', 'top']],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 62
     },
     __self: this
   }), __jsx(_ImageSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    imageUrls: [['static/robot-angle.jpg', '10% 70%'], ['static/vexu-can.jpg', '90% 90%']],
+    imageUrls: [['static/robot-angle.jpg', 'Double Reverse 4 Bar', '10% 70%'], ['static/vexu-can.jpg', 'Robot + Design Journal', '90% 90%']],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 63
@@ -143,7 +143,7 @@ var MobileImg = function MobileImg() {
     },
     __self: this
   }, __jsx(_ImageSection__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    imageUrls: [['static/awards.png', '60% 70%']],
+    imageUrls: [['static/awards.png', '2020 Awards', '60% 70%']],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -1533,32 +1533,41 @@ var FlexRow = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.with
 var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ImageSection__ImageContainer",
   componentId: "sc-8l8lqr-1"
-})(["display:flex;flex:1;justify-content:center;align-items:center;overflow:hidden;"]);
+})(["display:flex;flex:1;justify-content:center;align-items:center;overflow:hidden;position:relative;"]);
 var Image = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "ImageSection__Image",
   componentId: "sc-8l8lqr-2"
-})(["flex-shrink:0;min-width:100%;min-height:100%;background-image:url(", ");background-size:cover;background-repeat:no-repeat;background-position:", ";"], function (props) {
+})(["flex-shrink:0;min-width:100%;min-height:100%;transition:all 0.5s;z-index:0;background-image:url(", ");background-size:cover;background-repeat:no-repeat;background-position:", ";background-color:rgba(211,177,0,0);background-blend-mode:darken;:hover{}"], function (props) {
   return props.src;
 }, function (props) {
   return props.pos || 'center';
 });
+var Overlay = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ImageSection__Overlay",
+  componentId: "sc-8l8lqr-3"
+})(["width:100%;height:100%;opacity:0;position:absolute;top:0px;left:0px;z-index:1;transition:all 0.5s;word-wrap:break-word;:hover{display:block;background-color:rgb(211,177,0);opacity:0.8;}"]);
+var OverlayText = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+  displayName: "ImageSection__OverlayText",
+  componentId: "sc-8l8lqr-4"
+})(["position:relative;color:black;margin:2rem;font-weight:bold;"]);
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
   return __jsx(FlexRow, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 79
     },
     __self: this
   }, props.imageUrls.map(function (_ref, index) {
-    var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, 2),
+    var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, 3),
         url = _ref2[0],
-        pos = _ref2[1];
+        msg = _ref2[1],
+        pos = _ref2[2];
 
     return __jsx(ImageContainer, {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 82
       },
       __self: this
     }, __jsx(Image, {
@@ -1566,10 +1575,28 @@ var Image = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withCo
       pos: pos,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 83
       },
       __self: this
-    }));
+    }), __jsx(Overlay, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    }, __jsx(OverlayText, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    }, msg))));
   }));
 });
 
