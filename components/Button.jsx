@@ -8,7 +8,7 @@ const StyledButton = styled.div`
   font-size: 20px;
   cursor: pointer;
   user-select: none;
-  border: 2px solid black;
+  border: 4px solid black;
   color: black;
   padding: 0.8rem 5rem;
   text-align: center;
@@ -52,25 +52,14 @@ const StyledDarkButton = styled(StyledButton)`
   }
 `;
 
-/**
- * @param {{
- *   children: React.ReactNode;
- *   href: string;
- *   external?: boolean;
- * }} props
- */
-export const Button = props => {
-  return (
-    <NextLink href={props.href} external={props.external}>
-      <StyledButton>{props.children}</StyledButton>
-    </NextLink>
-  );
-};
+export const Button = props => (
+  <NextLink href={props.href} external={props.external}>
+    <StyledButton {...props}><h3>{props.children}</h3></StyledButton>
+  </NextLink>
+);
 
-export const DarkButton = props => {
-  return (
-    <NextLink href={props.href} external={props.external}>
-      <StyledDarkButton>{props.children}</StyledDarkButton>
-    </NextLink>
-  );
-};
+export const DarkButton = props => (
+  <NextLink href={props.href} external={props.external}>
+    <StyledDarkButton {...props}><h3>{props.children}</h3></StyledDarkButton>
+  </NextLink>
+);

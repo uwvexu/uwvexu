@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "gulp-sass": "^3.1.0",
     "next": "latest",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.12.0",
