@@ -25,7 +25,7 @@ const ListWrapper = styled.div`
 `;
 
 const ImgWrapper = styled.div`
-  filter: grayscale(100%);
+  // filter: grayscale(100%);
 
   @media screen and (max-width: ${responsiveSizes.smallScreen}px) {
     margin-bottom: 3rem;
@@ -58,13 +58,13 @@ const AwardsList = ({ awards }) => (
 
 const Images = () => (
   <ImgWrapper>
-    <ImageSection imageUrls={[['static/awards.png'], ['static/robot-side.jpg']]} />
-    <ImageSection imageUrls={[['static/comp2.jpg', '70% 70%'], ['static/intake.jpg', 'top']]} />
-    <ImageSection imageUrls={[['static/robot-angle.jpg', '10% 70%'], ['static/vexu-can.jpg', '90% 90%']]} />
+    <ImageSection imageUrls={[['static/awards.png', '2020 Awards'], ['static/robot-side.jpg', '24" Robot']]} />
+    <ImageSection imageUrls={[['static/comp2.jpg', 'VEX U Canada Competition', '70% 70%'], ['static/intake.jpg', 'Intake Idea', 'top']]} />
+    <ImageSection imageUrls={[['static/robot-angle.jpg', 'Double Reverse 4 Bar', '10% 70%'], ['static/vexu-can.jpg', 'Robot + Design Journal', '90% 90%']]} />
   </ImgWrapper>
 );
 
-const MobileImg = () => <ImgWrapper><ImageSection imageUrls={[['static/awards.png', '60% 70%']]} /></ImgWrapper>
+const MobileImg = () => <ImgWrapper><ImageSection imageUrls={[['static/awards.png', '2020 Awards', '60% 70%']]} /></ImgWrapper>
 
 const Awards = ({ awards }) => (
   <Section id="awards" title="AWARDS" bg="black" imagesUnderTitle>
