@@ -10,7 +10,7 @@ const WhoWeAre = () => (
       <br />
       <br />
       Each year we build two robots for a different game challenge (you can see this year’s game{' '}
-      <Link href='https://www.youtube.com/watch?v=_JVQOiw_OUU' external ybg>
+      <Link href='https://www.youtube.com/watch?v=Hxs0q9UoMDQ&ab_channel=VEXRobotics' external ybg>
         here
       </Link>). Both robots have a 1 minute and 45 second autonomous period, and a 45 second driver control period.
       <br />
@@ -18,7 +18,7 @@ const WhoWeAre = () => (
       We started this team so that any student could come and learn about robotics! Anyone is welcome to join.
       <br />
       <br />
-      <Button href='https://forms.gle/WGnEERX5HZF1xDwb7' external>
+      <Button href='https://bit.ly/3pCGxWD' external>
         JOIN US
       </Button>
       </p>

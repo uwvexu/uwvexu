@@ -110,7 +110,7 @@ const MenuOptions = (
       <h6><a href='#contact'>CONTACT</a></h6>
     </MenuOption>
 
-    <NextLink href='https://forms.gle/WGnEERX5HZF1xDwb7' external>
+    <NextLink href='https://bit.ly/3pCGxWD' external>
       <h6><MenuButton>JOIN</MenuButton></h6>
     </NextLink>
   </>
