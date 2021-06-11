@@ -6,21 +6,27 @@ import { yellow } from './Styles'
 
 const WhoWeAre = () => (
   <Section id="about" title="WHO WE ARE" bg={yellow}>
-      <p>We’re a team of University of Waterloo students who design, build, and program robots to compete at the VEX U World Championships.
-      <br />
-      <br />
-      Each year we build two robots for a different game challenge (you can see this year’s game{' '}
-      <Link href='https://www.youtube.com/watch?v=Hxs0q9UoMDQ&ab_channel=VEXRobotics' external ybg>
-        here
-      </Link>). Both robots have a 1 minute and 45 second autonomous period, and a 45 second driver control period.
-      <br />
-      <br />
-      We started this team so that any student could come and learn about robotics! Anyone is welcome to join.
-      <br />
-      <br />
-      <Button href='https://bit.ly/3pCGxWD' external>
-        JOIN US
-      </Button>
+      <p>
+        The UWAT VEX U Robotics team designs, builds and programs robots to compete in the international 
+        VEX U Robotics competition. Every season a new challenge is announced in which over 300 teams 
+        spend the year constructing, optimising and competing against each other. These robots are 
+        capable of precise object manipulation, visual object detection, unaided autonomous motion 
+        and navigation, driver-assisted remote operation, and much more. You can check out this years 
+        competition game{' '}
+        <Link href='https://www.youtube.com/watch?v=H8XcvADUXTE' external ybg>
+          here
+        </Link>.
+        <br />
+        <br />
+        UWAT VEX U strives to push the boundaries of robotics by implementing various manufacturing 
+        techniques, advanced software control algorithms and sensor integrations combining all 
+        engineering disciplines. Our team welcomes new students with and without prior competitive 
+        robotics experience!
+        <br />
+        <br />
+        <Button href='https://forms.gle/XppdTP3Vh5YnYyHJA' external>
+          JOIN US
+        </Button>
       </p>
     </Section>
 );

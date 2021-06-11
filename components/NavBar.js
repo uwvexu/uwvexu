@@ -36,10 +36,10 @@ const MenuText = styled.div`
 `;
 
 const MenuOption = styled(MenuText)`
-  color: white;
+  color: white !important;
   transition: all 0.2s;
   :hover {
-    color: ${yellow};
+    color: ${yellow} !important;
   }
 
   @media (max-width: ${maxNav}px) {
@@ -110,7 +110,7 @@ const MenuOptions = (
       <h6><a href='#contact'>CONTACT</a></h6>
     </MenuOption>
 
-    <NextLink href='https://bit.ly/3pCGxWD' external>
+    <NextLink href='https://forms.gle/XppdTP3Vh5YnYyHJA' external>
       <h6><MenuButton>JOIN</MenuButton></h6>
     </NextLink>
   </>

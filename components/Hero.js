@@ -17,7 +17,7 @@ const HeroBg = styled.div`
 `;
 
 const HeroText = styled(CenteredDiv)`
-  padding-top: 20vh;
+  padding-top: 32vh;
   width: 100%;
 
   @media screen and (max-width: ${responsiveSizes.smallScreen}px) {
@@ -37,7 +37,7 @@ const HeroTextMobile = styled(CenteredDiv)`
 const Highlight = styled.div`
   background-color: ${yellow};
   padding: 1rem 2rem;
-  color: white;
+  color: black;
   width: max-content;
   height: auto;
   margin: auto auto;
@@ -54,7 +54,7 @@ const TagLine = styled.h1`
 
 export const HeroBlock = ({ children }) => (
   <Highlight>
-    <Color color="white"><h1>{children}</h1></Color>
+    <Color color="black" style={{ fontWeight: 800 }}><h1>{children}</h1></Color>
   </Highlight>
 );
 
@@ -64,14 +64,12 @@ const Hero = () => (
 
       {/* screen > 1024 */}
       <HeroText>
-        <TagLine>learn <Color color={yellow}> / </Color> build</TagLine>
-        <TagLine mb="2rem">program <Color color={yellow}> / </Color> compete</TagLine>
-        <HeroBlock>U WAT VEX U ROBOTICS</HeroBlock>
+        <HeroBlock>UWAT VEX U ROBOTICS</HeroBlock>
       </HeroText>
 
       {/* screen <= 1024 */}
       <HeroTextMobile>
-        <HeroBlock>U WAT</HeroBlock>
+        <HeroBlock>UWAT</HeroBlock>
         <HeroBlock>VEX U</HeroBlock>
         <HeroBlock>ROBOTICS</HeroBlock>
       </HeroTextMobile>
