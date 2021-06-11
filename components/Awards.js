@@ -10,9 +10,9 @@ const StyledColumns = styled(Columns)`
   }
 `;
 
-const CompName = styled.h2`
+const CompName = styled.h4`
   color: ${yellow};
-  margin-top: ${props => props.space ? '5rem' : 0};
+  margin-top: ${props => props.space ? '3rem' : 0};
 `;
 
 const ListParent = styled.div`
@@ -47,7 +47,7 @@ const AwardsList = ({ awards }) => (
         <div key={index}>
           <CompName space={index != 0}>{comp}</CompName>
           <Color color="white">
-            <h4>{award}</h4>
+            {award.map(a => <h4>{a}</h4>)}
             <h4>{year}</h4>
           </Color>
         </div>

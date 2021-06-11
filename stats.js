@@ -11,14 +11,40 @@ export const competitions = [
 
 export const awards = [
   {
-    comp: 'RIT VEX U',
-    award: 'Design Award',
-    year: 2020,
+    comp: 'Purdue SIGBots Skills Qualifier',
+    award: ['Excellence Award', 'Robot Skills Champion'],
+    year: 2021,
   },
   {
-    comp: 'VEX U CANADA',
-    award: 'Design Award',
-    year: 2020,
+    comp: 'West Virginia VEX U Qualifier',
+    award: ['Robot Skills Champion'],
+    year: 2021,
   },
+  {
+    comp: 'RIT 2021 VEX U',
+    award: ['Robot Skills Champion'],
+    year: 2021,
+  },
+
+  {
+    comp: 'CSUN Skills VEX U',
+    award: ['Robot Skills Champion'],
+    year: 2021,
+  },
+  {
+    comp: 'Upper Midwest VEX U',
+    award: ['Robot Skills 3rd Place'],
+    year: 2021,
+  },
+  // {
+  //   comp: 'RIT VEX U',
+  //   award: ['Design Award'],
+  //   year: 2020,
+  // },
+  // {
+  //   comp: 'VEX U CANADA',
+  //   award: ['Design Award'],
+  //   year: 2020,
+  // },
 ];
 
